@@ -2,6 +2,6 @@
 def islower(c):
     character = ord(c)
     if character > 96 and character <123:
-        return true
+        return True
     else:
-        return falste
+        return False
