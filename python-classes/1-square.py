@@ -7,5 +7,4 @@ class Square:
     Does this work like this?
     """
     def __init__(self, size):
-        silf.__size = size
-    pass
+        self.__size = size
