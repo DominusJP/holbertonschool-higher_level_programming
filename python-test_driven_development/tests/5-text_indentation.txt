@@ -1,0 +1,70 @@
+________________
+
+project number 5
+________________
+
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+    >>> text_indentation(15)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+
+    >>> text_indentation(True)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+
+    >>> text_indentation(str)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+
+	>>> text_indentation("Lorem:")
+	Lorem:
+	<BLANKLINE>
+
+
+	>>> text_indentation("Betty")
+	Betty
+
+
+	>>> text_indentation(":Betty")
+	:
+	<BLANKLINE>
+	Betty
+
+
+	>>> text_indentation(" ")
+
+
+
+	>>> text_indentation("")
+
+
+
+	>>> text_indentation(" .")
+	.
+	<BLANKLINE>
+
+
+	>>> text_indentation(-2)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+
