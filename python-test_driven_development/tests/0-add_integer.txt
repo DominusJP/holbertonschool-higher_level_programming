@@ -1,1 +1,83 @@
+Integers Addition
+
+1 Create a simple integer adder
+
+_________________________
+
+def add_integer(a, b=98):
+_________________________
+
+The method can take two numbers separated by comas and will return their sum.
+the numbers must be integers or floats (one of them must be an integer)
+
+Primero, importar funcion:
+==========================
+
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+
+
+
+Actual test cases:
+==================
+
+
+Test 0: without parameters
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test 1: unasigned value
+
+    >>> add_integer(a, 123)
+    Traceback (most recent call last):
+    NameError: name 'a' is not defined
+
+Test 2: using the default
+
+    >>> add_integer(5)
+    103
+
+test 3: normal 2 integers:
+
+    >>> add_integer(1, 2)
+    3
+
+test 4: normal float and integer
+
+    >>> add_integer(10.0, 8)
+    18
+
+test 5: float and negative integer
+
+    >>> add_integer(100.5, -10)
+    90
+
+test 6: integer and infinite float (?
+
+    >>> add_integer(999e9999, -1)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+test 7: type none parameter
+
+    >>> add_integer(None, 2)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test 8: type list parameter
+
+    >>> add_integer([1, 2], 15)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test 9: type str parameter
+
+    >>> add_integer(1, "Monty Python")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+
 
