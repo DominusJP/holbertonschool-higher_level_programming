@@ -98,7 +98,7 @@ class Rectangle:
             rectangle_str = ""
             for _ in range(self.__height):
                 rectangle_str += "#" * self.__width + "\n"
-            return rectangle_str.rstrip()  # Remove the trailing newline in the last row
+            return rectangle_str.rstrip()
 
     def __repr__(self):
         """
