@@ -98,7 +98,7 @@ class Rectangle:
             rectangle_str = ""
             for _ in range(self.__height):
                 rectangle_str += "#" * self.__width + "\n"
-            return rectangle_str.rstrip()
+            return rectangle_str.rstrip()  # Remove the trailing newline in the last row
 
     def __repr__(self):
         """
@@ -107,3 +107,5 @@ class Rectangle:
         :return: A string representation of the object.
         """
         return f"Rectangle({self.__width}, {self.__height})"
+
+
