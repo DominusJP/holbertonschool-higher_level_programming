@@ -10,5 +10,5 @@ class MyList(list):
         Prints the list in ascending order.
 
         """
-        sorted_list = sorted(self)
-        print(sorted_list)
+        if all(isinstance(i, int) for i in self):
+            print(sorted_list)
