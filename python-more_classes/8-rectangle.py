@@ -135,7 +135,8 @@ class Rectangle:
         area1 = rect_1.area()
         area2 = rect_2.area()
 
-        if area1 >= area2:
+        if area1 == area2 or area1 > area2:
             return rect_1
-        else:
+        elif area1 < area2:
             return rect_2
+
