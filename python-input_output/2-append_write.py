@@ -11,4 +11,3 @@ def append_write(filename="", text=""):
     except Exception as e:
         print(f"An error occurred: {e}")
         return 0  # Return 0 if an error occurs
-
