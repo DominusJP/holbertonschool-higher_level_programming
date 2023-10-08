@@ -1,6 +1,14 @@
 #!/usr/bin/python3
+"""
+Empezamos con los comentarios/we start with the comments
+Modulo, Python - More classes. Time to code a rectangle.
+"""
+
+
 class Rectangle:
-    number_of_instances = 0
+    """
+    This class is for a rectangle
+    """
 
     def __init__(self, width=0, height=0):
         """
@@ -11,7 +19,6 @@ class Rectangle:
         """
         self.__width = width
         self.__height = height
-        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -95,7 +102,7 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Returns a string representation of the object for recreating instances.
+        Returns a string representation of the object for debugging purposes.
 
         :return: A string representation of the object.
         """
@@ -103,9 +110,8 @@ class Rectangle:
 
     def __del__(self):
         """
-        Prints a message when an instance of Rectangle is deleted and decrements the number_of_instances.
+        Prints a message when an instance of Rectangle is deleted.
 
         """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
