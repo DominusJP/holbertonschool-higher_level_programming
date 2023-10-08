@@ -9,7 +9,7 @@ class Rectangle:
     """
     This class is for a rectangle
     """
-
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """
         Initializes a new Rectangle object with the given width and height.
@@ -19,6 +19,7 @@ class Rectangle:
         """
         self.__width = width
         self.__height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
