@@ -1,19 +1,16 @@
 #!/usr/bin/python3
-""" moooooreeeee"""
+"""pipipipipip"""
 
 
 class BaseGeometry:
+    """not an empty class"""
     def area(self):
-        """
-        Raises an Exception with the message "area() is not implemented."
-        """
+        """function"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """
-        Validates the value for being an integer and greater than 0.
-        """
-        if isinstance(value, int):
+        """function to validate an itenger"""
+        if isinstance(name, str):
             self.name = name
         if not isinstance(value, int):
             raise TypeError(f"{self.name} must be an integer")
