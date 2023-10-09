@@ -12,4 +12,4 @@ except FileNotFoundError:
     current_list = []
 args = sys.argv[1:]
 current_list.extend(args)
-save_to_json_file(existing_list, "add_item.json")
+save_to_json_file(current_list, "add_item.json")
