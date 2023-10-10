@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """review module"""
-
-
 from models.base import Base
+
 
 class Rectangle(Base):
     """base rectangle class"""
@@ -60,4 +59,3 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("Y cannot be negative")
         self.__y = value
-
