@@ -6,6 +6,7 @@ from models.base import Base
 class Rectangle(Base):
     """updating rectangle to include validatr"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """doe thi need a commit a well"""
         super().__init__(id)
         self.__width = None
         self.__height = None
@@ -65,4 +66,5 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """doe thi need a comment"""
         return self.__width * self.__height
