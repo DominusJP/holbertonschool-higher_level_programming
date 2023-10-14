@@ -80,7 +80,7 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - " \
                f"{self.__width}/{self.__height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns arguments to attributes in the specified order."""
         arg_count = len(args)
         if arg_count >= 1:
