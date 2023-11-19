@@ -6,7 +6,7 @@ script that lists all states from the database hbtn_0e_0_usa
 
 
 import MySQLdb
-import sys
+from sys import argv
 
 
 def list_states(username, password, dbname):
